@@ -1,4 +1,4 @@
-# Basic XML Structure:
+  # Basic XML Structure:
 #
 #   <Placemark id="ID">
 #     <!-- inherited from Feature element -->
