@@ -9,6 +9,7 @@
 #   )
 #   puts f.render
 class KMLFile
+  attr_accessor :target
   attr_accessor :objects
 
   # The objects in the KML file
@@ -16,10 +17,23 @@ class KMLFile
     @objects ||= []
   end
 
+  def hint
+    if target == 'moon'
+      'target=moon'
+    else
+      'target=earth'
+    end
+  end
+
   # Render the KML file
   def render(xm=Builder::XmlMarkup.new(:indent => 2))
+
     xm.instruct!
-    xm.kml(:xmlns => 'http://earth.google.com/kml/2.1'){
+    xm.kml(xmlns: 'http://www.opengis.net/kml/2.2',
+           'xmlns:gx' => 'http://www.google.com/kml/ext/2.2',
+           'xmlns:kml' => 'http://www.opengis.net/kml/2.2',
+           'xmlns:atom' => 'http://www.w3.org/2005/Atom',
+           hint: hint) {
       objects.each { |o| o.render(xm) }
     }
   end

@@ -20,3 +20,4 @@ end
 
 require 'kml/folder'
 require 'kml/document'
+require 'kml/tour'
