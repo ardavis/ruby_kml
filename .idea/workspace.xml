@@ -3,19 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="f421320c-67f8-4be0-87a6-fa5099190c9f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ruby_kml-0.1.7.gem" afterPath="$PROJECT_DIR$/ruby_kml-0.1.7.gem" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/kml/container.rb" afterPath="$PROJECT_DIR$/lib/kml/container.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/kml/fly_to.rb" afterPath="$PROJECT_DIR$/lib/kml/fly_to.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/kml_file.rb" afterPath="$PROJECT_DIR$/lib/kml_file.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/kml/object.rb" afterPath="$PROJECT_DIR$/lib/kml/object.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/kml/tour.rb" afterPath="$PROJECT_DIR$/lib/kml/tour.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/kml/camera.rb" afterPath="$PROJECT_DIR$/lib/kml/camera.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ruby_kml.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="f421320c-67f8-4be0-87a6-fa5099190c9f" time="1378742439430" ignored="false" />
     <file path="/a.xml" changelist="f421320c-67f8-4be0-87a6-fa5099190c9f" time="1378494116016" ignored="false" />
-    <file path="$PROJECT_DIR$/../apollo_12_google_moon/apollo12.rb" changelist="f421320c-67f8-4be0-87a6-fa5099190c9f" time="1378749426725" ignored="false" />
-    <file path="$PROJECT_DIR$/../apollo_12_google_moon/test.kml" changelist="f421320c-67f8-4be0-87a6-fa5099190c9f" time="1378749731923" ignored="false" />
+    <file path="$PROJECT_DIR$/../apollo_12_google_moon/apollo12.rb" changelist="f421320c-67f8-4be0-87a6-fa5099190c9f" time="1378750225983" ignored="false" />
+    <file path="$PROJECT_DIR$/../apollo_12_google_moon/test.kml" changelist="f421320c-67f8-4be0-87a6-fa5099190c9f" time="1378750234931" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +33,7 @@
     <splitter split-orientation="vertical" split-proportion="0.5276968">
       <split-first>
         <leaf>
-          <file leaf-file-name="fly_to.rb" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="fly_to.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lib/kml/fly_to.rb">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="16" column="178" selection-start="423" selection-end="423" vertical-scroll-proportion="0.4651163">
@@ -86,10 +82,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="camera.rb" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="camera.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lib/kml/camera.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="38" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0">
+                <state line="28" column="87" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.7682119">
                   <folding />
                 </state>
               </provider>
@@ -104,10 +100,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="tour.rb" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="tour.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lib/kml/tour.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="6" column="11" selection-start="200" selection-end="200" vertical-scroll-proportion="0.1986755">
+                <state line="6" column="11" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -134,13 +130,13 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/lib/kml/placemark.rb" />
-        <option value="$PROJECT_DIR$/lib/kml/camera.rb" />
         <option value="$PROJECT_DIR$/lib/kml/container.rb" />
         <option value="$PROJECT_DIR$/lib/kml/feature.rb" />
         <option value="$PROJECT_DIR$/lib/kml/object.rb" />
         <option value="$PROJECT_DIR$/lib/kml/tour.rb" />
         <option value="$PROJECT_DIR$/lib/kml_file.rb" />
         <option value="$PROJECT_DIR$/lib/kml/fly_to.rb" />
+        <option value="$PROJECT_DIR$/lib/kml/camera.rb" />
       </list>
     </option>
   </component>
@@ -358,7 +354,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="25" width="1930" height="1154" extended-state="7" />
+    <frame x="-5" y="25" width="1930" height="1154" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -490,23 +486,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/kml/camera.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="38" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/kml/container.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="23" selection-start="155" selection-end="155" vertical-scroll-proportion="0.06622516">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/kml/tour.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="11" selection-start="200" selection-end="200" vertical-scroll-proportion="0.1986755">
           <folding />
         </state>
       </provider>
@@ -549,6 +531,20 @@
     <entry file="file://$PROJECT_DIR$/lib/kml/fly_to.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="178" selection-start="423" selection-end="423" vertical-scroll-proportion="0.4651163">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/kml/tour.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="11" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/kml/camera.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="87" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.7682119">
           <folding />
         </state>
       </provider>
