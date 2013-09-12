@@ -22,11 +22,14 @@ module KML
     attr_accessor :altitude_mode
 
     def render(xm=Builder::XmlMarkup.new(:indent => 2))
-      [:longitude, :latitude, :altitude, :range, :tilt, :roll, :heading].each do |a|
-        xm.__send__(a, self.__send__(a)) unless self.__send__(a).nil?
-      end
 
-      xm.__send__('gx:altitudeMode', self.altitude_mode) unless self.altitude_mode.nil?
+      xm.Camera do
+        [:longitude, :latitude, :altitude, :range, :tilt, :roll, :heading].each do |a|
+          xm.__send__(a, self.__send__(a)) unless self.__send__(a).nil?
+        end
+
+        xm.__send__('gx:altitudeMode', self.altitude_mode) unless self.altitude_mode.nil?
+      end
     end
   end
 end

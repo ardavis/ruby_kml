@@ -8,9 +8,9 @@ module KML
 
         xm.__send__('gx:duration', self.duration)  unless self.duration.nil?
 
-        xm.__send__(feature.class.name.split("::").last || "") do
-          feature.render(xm)
-        end unless feature.nil?
+        #xm.__send__(feature.class.name.split("::").last || "") do
+        feature.render(xm) unless feature.nil?
+        #end unless feature.nil?
       end
     end
   end
