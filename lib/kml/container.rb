@@ -21,3 +21,4 @@ end
 require 'kml/folder'
 require 'kml/document'
 require 'kml/tour'
+require 'kml/photo_overlay'
